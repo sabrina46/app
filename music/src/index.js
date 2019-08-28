@@ -4,7 +4,7 @@ import './index.scss';
 import './assets/font/iconfont.css';
 import './assets/css/common.scss';
 import App from './App.js';
-import Detail from './view/Recommendation';
+import Detail from './view/recommendation';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter, Route } from 'react-router-dom';
 import store from './store/store';
