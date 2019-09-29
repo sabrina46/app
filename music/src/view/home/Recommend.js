@@ -101,7 +101,7 @@ class Recommend extends React.Component {
     let recommendList = this.state.recommendList;
     return (
       <div className={recommend.content}>
-        <Link to="/detail">
+        <Link to="/recommend">
           <h1 className={recommend.title}>推介</h1>
           <div className={classnames([recommend.container, 'swiper-container', { hidden: !recommendList.length }])}>
             <div className={classnames([recommend.list, 'swiper-wrapper'])}>

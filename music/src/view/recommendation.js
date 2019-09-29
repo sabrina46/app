@@ -78,6 +78,9 @@ class Recommendation extends React.Component {
       that.getList();
     }, 1000);
   };
+  goDetail = () => {
+    this.props.history.push('/')
+  }
   render() {
     let data = this.state.appList;
     if(data.length === 0) return (<div className={styles.empty}>暂无数据</div>);
@@ -86,7 +89,7 @@ class Recommendation extends React.Component {
       const obj = data[index++];
       if(!obj) return ''
       return (
-        <div className={styles.content}>
+        <div className={styles.content} onClick={this.goDetail}>
           <ListItem list={obj} key={rowID}></ListItem>
         </div>
       );

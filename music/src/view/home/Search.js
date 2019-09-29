@@ -6,7 +6,7 @@ class Search extends React.Component {
   render() {
     return (
       <div className={styles.content}>
-        {/* <ListItem></ListItem> */}
+        <ListItem></ListItem>
       </div>
     )
   }
