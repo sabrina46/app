@@ -1,6 +1,5 @@
-import React from "react";
+import React,{PureComponent} from "react";
 import { Form, Icon, Input, Button, Checkbox } from "antd";
-import { PureComponent } from React;
 class Login extends PureComponent {
     render() {
         const { getFieldDecorator } = this.props.form;
@@ -44,3 +43,4 @@ class Login extends PureComponent {
         );
       }
 }
+export default Login;
