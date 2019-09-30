@@ -1,7 +1,7 @@
-import React,{PureComponent} from "react";
+import React,{Component,ReactDOM} from "react";
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 
-class Login extends PureComponent {
+class Login extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
@@ -52,4 +52,5 @@ class Login extends PureComponent {
     );
   }
 }
-export default  Login;
+const WrappedRegistrationForm = Form.create()(Login);
+export default WrappedRegistrationForm;
