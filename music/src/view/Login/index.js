@@ -10,7 +10,6 @@ class Login extends PureComponent {
       }
     });
   };
-
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
